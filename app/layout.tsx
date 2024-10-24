@@ -1,5 +1,6 @@
 import './globals.css'
 import SidebarMenu from './components/sidebar-menu'
+import { DolfimLogo } from '@/components/ui/dolfimLogo'
 
 export default function RootLayout({
   children,
@@ -11,7 +12,7 @@ export default function RootLayout({
       <body>
         <div className="flex">
           <SidebarMenu />
-          <main className='w-screen'>{children}</main>
+          <main className='w-screen bg-slate'>{children}</main>
         </div>
       </body>
     </html>

@@ -3,14 +3,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ChevronLeft, ChevronRight, Home, FileText, Settings, Users, BarChart } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Home, LayoutGrid } from 'lucide-react'
 
 const menuItems = [
   { name: 'Início', icon: Home, path: '/' },
-  { name: 'Relatórios', icon: FileText, path: '/relatorios' },
-  { name: 'Usuários', icon: Users, path: '/usuarios' },
-  { name: 'Estatísticas', icon: BarChart, path: '/estatisticas' },
-  { name: 'Configurações', icon: Settings, path: '/configuracoes' },
+  { name: 'Aplicações', icon: LayoutGrid, path: '/applications' }
 ]
 
 export default function SidebarMenu() {
@@ -19,9 +16,8 @@ export default function SidebarMenu() {
 
   return (
     <div
-      className={`flex flex-col min-h-max bg-gray-800 text-pale-blue transition-all duration-300 ${
-        isExpanded ? 'w-64' : 'w-16'
-      }`}
+      className={`flex flex-col items-center min-h-screen bg-gray-800 text-pale-blue transition-all duration-300 ${isExpanded ? 'w-64' : 'w-16'
+        }`}
     >
       <div className="flex p-4">
         <button
@@ -37,11 +33,10 @@ export default function SidebarMenu() {
             <li key={item.name}>
               <Link href={item.path} passHref>
                 <span
-                  className={`flex items-center p-2 rounded-lg hover:bg-gray-700 transition-colors ${
-                    pathname === item.path ? 'bg-gray-700' : ''
-                  }`}
+                  className={`flex items-center p-2 rounded-lg hover:bg-gray-700 transition-colors ${pathname === item.path ? 'bg-gray-700' : ''
+                    } ${isExpanded ? 'justify-start' : 'justify-center'}`}
                 >
-                  <item.icon size={24} className="min-w-[24px]" />
+                  <item.icon size={24} className="w-[32px]" />
                   {isExpanded && <span className="ml-3">{item.name}</span>}
                 </span>
               </Link>

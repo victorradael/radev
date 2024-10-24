@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
-import { Github, Globe, Mail, MapPin } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -40,25 +40,21 @@ export default async function ProfilePage() {
   const repos = await getGithubRepos()
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate p-4">
+    <div className="flex items-center justify-center min-h-screen p-4">
       <Card className="w-full max-w-4xl mx-auto bg-deep-black border-light-blue opacity-85">
         <CardHeader className="border-b border-light-blue">
-          <div className="flex flex-col md:flex-row items-center gap-6">        
-              <Image
-                src={profile.avatar_url || '/placeholder.svg?height=150&width=150'}
-                alt={profile.name || 'Profile Picture'}
-                width={150}
-                height={150}
-                className="rounded-full border-4 border-sky-blue"
-                priority
-              />
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <Image
+              src={profile.avatar_url || '/placeholder.svg?height=150&width=150'}
+              alt={profile.name || 'Profile Picture'}
+              width={150}
+              height={150}
+              className="rounded-full border-4 border-sky-blue"
+              priority
+            />
             <div className="text-center md:text-left">
               <CardTitle className="text-3xl mb-2 text-sky-blue">{profile.name}</CardTitle>
               <CardDescription className="text-lg mb-2 text-pale-blue">{profile.bio}</CardDescription>
-              <div className="flex items-center justify-center md:justify-start gap-2 text-light-blue">
-                <MapPin className="w-4 h-4" />
-                <span>{profile.location}</span>
-              </div>
             </div>
           </div>
         </CardHeader>
@@ -89,25 +85,16 @@ export default async function ProfilePage() {
                     <Github className="mr-2 h-4 w-4" /> GitHub
                   </a>
                 </Button>
-                {profile.blog && (
-                  <Button variant="outline" size="sm" asChild className="bg-royal-blue text-pale-blue hover:bg-sky-blue hover:text-deep-black">
-                    <a href={profile.blog} target="_blank" rel="noopener noreferrer">
-                      <Globe className="mr-2 h-4 w-4" /> Website
-                    </a>
-                  </Button>
-                )}
-                {profile.email && (
-                  <Button variant="outline" size="sm" asChild className="bg-royal-blue text-pale-blue hover:bg-sky-blue hover:text-deep-black">
-                    <a href={`mailto:${profile.email}`}>
-                      <Mail className="mr-2 h-4 w-4" /> Email
-                    </a>
-                  </Button>
-                )}
+                <Button variant="outline" size="sm" asChild className="bg-royal-blue text-pale-blue hover:bg-sky-blue hover:text-deep-black">
+                  <a href='https://www.linkedin.com/in/victorradael/' target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="mr-2 h-4 w-4" /> Linkedin
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-3 text-sky-blue">Repositórios Recentes</h3>
+            <h3 className="text-xl font-semibold mb-3 text-sky-blue">Projetos trabalhados recentemente</h3>
             <div className="space-y-4">
               {Array.isArray(repos) && repos.length > 0 ? (
                 repos.map((repo: any) => (
