@@ -6,8 +6,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 const Globe = ({ size = 1 }) => {
+	// biome-ignore lint/style/noNonNullAssertion: <explanation>
 	const meshRef = useRef<THREE.Mesh>(null!);
+	// biome-ignore lint/style/noNonNullAssertion: <explanation>
 	const groupRef = useRef<THREE.Group>(null!);
+	// biome-ignore lint/style/noNonNullAssertion: <explanation>
 	const dotsRef = useRef<THREE.Points>(null!);
 
 	useEffect(() => {
@@ -29,7 +32,7 @@ const Globe = ({ size = 1 }) => {
 
 			vertices.push(x, y, z);
 
-			color.setHSL(0.75, 0.6, Math.random() * 0.3 + 0.4);
+			color.setHSL(0.6, Math.random() * 0.5 + 0.5, Math.random() * 0.3 + 0.3);
 			colors.push(color.r, color.g, color.b);
 		}
 
@@ -77,21 +80,19 @@ const Globe = ({ size = 1 }) => {
 
 interface GlobeContainerProps {
 	size?: number;
-	containerClassName?: string;
+	className?: string;
 }
 
 export const GlobeContainer = ({
 	size = 1,
-	containerClassName = "",
+	className = "",
 }: GlobeContainerProps) => {
 	return (
-		<div
-			className={`relative w-full h-full bg-[#0d1117] ${containerClassName}`}
-		>
+		<div className={`relative w-full h-full bg-[#0d1117] ${className}`}>
 			<div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0d1117]/80" />
 			<Canvas
 				camera={{
-					position: [0, 0, 2.5 * size],
+					position: [0, 0, 4],
 					fov: 45,
 					near: 0.1,
 					far: 1000,
@@ -105,7 +106,7 @@ export const GlobeContainer = ({
 					enablePan={false}
 					rotateSpeed={0.4}
 					autoRotate
-					autoRotateSpeed={0.5}
+					autoRotateSpeed={1.8}
 				/>
 			</Canvas>
 		</div>
