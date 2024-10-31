@@ -9,6 +9,7 @@ export const Icons: React.FC<IconProps> = ({ name, className }) => {
 	switch (name) {
 		case "home":
 			return (
+				// biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
 				<svg
 					className={className}
 					xmlns="http://www.w3.org/2000/svg"
