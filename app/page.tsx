@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 	title: "Victor Radael - Engenheiro de Software",
 	description: "Página de apresentação baseada no perfil do GitHub",
 	icons: {
-		icon: "/radael-small.svg",
+		icon: "/favicon.ico",
+		apple: "/apple-touch-icon.png",
 	},
 };
 
