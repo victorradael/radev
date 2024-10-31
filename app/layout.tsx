@@ -1,20 +1,17 @@
-import './globals.css'
-import SidebarMenu from './components/sidebar-menu'
-import { DolfimLogo } from '@/components/ui/dolfimLogo'
+import { Navbar } from "@/components/navbar";
+import "./globals.css";
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <div className="flex">
-          <SidebarMenu />
-          <main className='w-screen bg-slate'>{children}</main>
-        </div>
-      </body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body>
+				<Navbar />
+				<main className="w-screen bg-slate">{children}</main>
+			</body>
+		</html>
+	);
 }
