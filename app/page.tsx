@@ -18,21 +18,20 @@ export default async function ProfilePage() {
 	const profile = await getGithubProfile();
 
 	return (
-		<div className="flex items-center justify-center h-screen w-screen">
-			<div className="bg-[#0d1117] w-full max-w-4xl overflow-hidden">
-				<div className="grid grid-cols-5">
+		<div className="flex items-center justify-center min-h-screen w-full p-4 bg-[#0d1117]">
+			<div className="bg-[#0d1117] w-full max-w-4xl overflow-hidden rounded-lg shadow-lg">
+				<div className="grid grid-cols-1 md:grid-cols-5">
 					{/* Left Column */}
-					<div className="col-span-2 bg-[#0a66c2] p-8 m-8 relative min-h-[400px]">
+					<div className="md:col-span-2 bg-[#0a66c2] p-8 relative min-h-[400px]">
 						{/* Profile Content */}
-						<div className="space-y-8 mt-16">
+						<div className="space-y-8 mt-8 md:mt-16">
 							{/* Profile Image */}
 							<div className="relative">
-								<div className="w-48 h-48 mx-auto relative">
+								<div className="w-32 h-32 md:w-48 md:h-48 mx-auto relative">
 									<div
 										className="absolute inset-0 bg-[#0c4885] rounded-full"
-										style={{ transform: "translate(12px, 0px)" }}
+										style={{ transform: "translate(8px, 0px)" }}
 									/>
-
 									<div className="relative rounded-full overflow-hidden border-[3px] border-white/90">
 										<Image
 											src={
@@ -52,11 +51,11 @@ export default async function ProfilePage() {
 							</div>
 
 							{/* Name and Contact */}
-							<div className="text-white pt-8">
-								<div className="text-4xl font-extralight tracking-wide">
+							<div className="text-white pt-4 md:pt-8 text-center md:text-left">
+								<div className="text-2xl md:text-4xl font-extralight tracking-wide">
 									Im,
 								</div>
-								<div className="text-6xl  ">
+								<div className="text-4xl md:text-6xl">
 									<strong>Victor</strong>
 									<br />
 									<strong>Radael</strong>
@@ -67,65 +66,62 @@ export default async function ProfilePage() {
 							<Link
 								href="https://www.linkedin.com/in/victorradael/"
 								target="_blank"
+								className="block md:absolute md:bottom-56 md:right-8"
 							>
-								<div className="absolute bottom-56 right-8">
-									<div className="w-24 h-24 bg-[#0d1117] rounded-full border border-white/10 flex items-center justify-center relative group">
-										<div className="w-8 h-8 bg-white rounded-full" />
-										<div className="absolute inset-0">
-											{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-											<svg
-												className="w-full h-full animate-spin-slow"
-												viewBox="0 0 100 100"
-											>
-												<defs>
-													<path
-														id="circle"
-														d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-													/>
-												</defs>
-												<text className="text-[12px] fill-white font-semibold">
-													<textPath href="#circle" startOffset="0%">
-														MY • LINKEDIN • PROFILE
-													</textPath>
-												</text>
-											</svg>
-										</div>
-										<div className="absolute inset-[-1px] rounded-full border border-white/10" />
+								<div className="w-20 h-20 md:w-24 md:h-24 bg-[#0d1117] rounded-full border border-white/10 flex items-center justify-center relative group mx-auto md:mx-0">
+									<div className="w-6 h-6 md:w-8 md:h-8 bg-white rounded-full" />
+									<div className="absolute inset-0">
+										{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+										<svg
+											className="w-full h-full animate-spin-slow"
+											viewBox="0 0 100 100"
+										>
+											<defs>
+												<path
+													id="circle"
+													d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+												/>
+											</defs>
+											<text className="text-[10px] md:text-[12px] fill-white font-semibold">
+												<textPath href="#circle" startOffset="0%">
+													MY • LINKEDIN • PROFILE
+												</textPath>
+											</text>
+										</svg>
 									</div>
+									<div className="absolute inset-[-1px] rounded-full border border-white/10" />
 								</div>
 							</Link>
 						</div>
 					</div>
 
 					{/* Right Column */}
-					<div className="col-span-3 m-8 m">
+					<div className="md:col-span-3 p-8">
 						{/* Globe */}
-						<div className="relative aspect-[1/1]">
+						<div className="relative aspect-square max-w-[300px] mx-auto mb-8">
 							<GlobeContainer size={1} />
 						</div>
 
 						{/* Grid Layout */}
-						<div className="grid grid-cols-4 ">
+						<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 							{/* Github */}
-							<div className="col-span-1  p-5 relative flex items-center justify-center">
+							<div className="p-5 relative flex items-center justify-center">
 								<Link href="https://github.com/victorradael" target="_blank">
 									<Github className="w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity text-white" />
 								</Link>
 							</div>
 							{/* Repositórios */}
-							<div className="col-span-1 p-5 relative text-white flex flex-col items-center justify-center">
+							<div className="p-5 relative text-white flex flex-col items-center justify-center">
 								<div className="text-3xl font-bold">{profile.public_repos}</div>
 								<div className="text-sm mt-1">Repositórios</div>
 							</div>
-
 							{/* Seguindo */}
-							<div className="col-span-1  p-5 relative text-white flex flex-col items-center justify-center">
+							<div className="p-5 relative text-white flex flex-col items-center justify-center">
 								<div className="text-3xl font-bold">{profile.following}</div>
 								<div className="text-sm mt-1">Seguindo</div>
 							</div>
-
 							{/* Seguidores */}
-							<div className="col-span-1  p-5 relative text-white flex flex-col items-center justify-center">
+							<div className="p-5 relative text-white flex flex-col items-center justify-center">
 								<div className="text-3xl font-bold">{profile.followers}</div>
 								<div className="text-sm mt-1">Seguidores</div>
 							</div>
