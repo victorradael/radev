@@ -1,4 +1,4 @@
-// import { Navbar } from "@/components/navbar";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,8 +9,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				{/* <Navbar /> */}
-				<main className="w-screen bg-slate">{children}</main>
+				<main className="w-screen bg-slate">
+					{children}
+					<Footer />
+				</main>
 			</body>
 		</html>
 	);
