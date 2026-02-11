@@ -16,7 +16,7 @@ export function ClientPage({ profile }: ClientPageProps) {
     const [activeTab, setActiveTab] = useState<"profile" | "projects">("profile");
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen w-full bg-[#0d1117] px-4 sm:px-6 lg:px-8 py-10">
+        <div className="flex flex-col items-center justify-center w-full bg-[#0d1117] px-4 sm:px-6 lg:px-8 py-10 flex-1">
             <NavSwitcher activeTab={activeTab} onTabChange={setActiveTab} />
 
             <div className="w-full max-w-4xl relative">

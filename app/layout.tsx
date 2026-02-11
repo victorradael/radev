@@ -8,11 +8,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>
-				<main className="w-screen bg-slate">
+			<body className="min-h-screen flex flex-col">
+				<main className="flex-1 flex flex-col bg-slate w-full">
 					{children}
-					<Footer />
 				</main>
+				<Footer />
 			</body>
 		</html>
 	);
