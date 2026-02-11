@@ -20,7 +20,7 @@ export function NavSwitcher({ activeTab, onTabChange }: NavSwitcherProps) {
                     key={tab.id}
                     onClick={() => onTabChange(tab.id)}
                     className={`
-            relative px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-white/50
+            relative px-4 md:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-white/50
             ${activeTab === tab.id ? "text-white" : "text-white/60 hover:text-white/90"}
           `}
                 >
