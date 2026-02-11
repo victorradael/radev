@@ -4,6 +4,7 @@ import { ProfileCard } from "@/components/profile-card";
 import { getGithubProfile } from "../functions/github";
 
 import { CustomCard } from "@/components/custom-card";
+import { ProjectList } from "@/components/project-list";
 
 export const metadata: Metadata = {
 	title: "Victor Radael - Engenheiro de Software | Portfólio Profissional",
@@ -53,13 +54,13 @@ export default async function ProfilePage() {
 			<TabsContent value="profile" className="w-full max-w-4xl mt-4 sm:mt-6">
 				<ProfileCard profile={profile} />
 			</TabsContent>
-			<TabsContent value="projects">
+			<TabsContent value="projects" className="w-full max-w-4xl mt-4 sm:mt-6">
 				<CustomCard shadow="white">
-					<div className="flex w-screen max-w-4xl text-white min-h-[400px] items-center justify-center">
-						Em breve
+					<div className="min-h-[600px] bg-[#0d1117] flex flex-col">
+						<ProjectList />
 					</div>
 				</CustomCard>
 			</TabsContent>
-		</Tabs>
+		</Tabs >
 	);
 }
