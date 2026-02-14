@@ -46,7 +46,7 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
                             src={project.logoUrl || "/placeholder.svg"}
                             alt={project.title}
                             fill
-                            className="object-cover"
+                            className="object-contain p-4"
                         />
                     )}
                 </motion.div>

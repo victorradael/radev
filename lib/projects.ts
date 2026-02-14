@@ -30,4 +30,29 @@ export const projects: Project[] = [
 			background: "#000000",
 		},
 	},
+	{
+		id: "condoguard",
+		title: "CondoGuard",
+		shortDescription: "Gestão eficiente de despesas condominiais.",
+		fullDescription:
+			"CONDOGUARD é uma aplicação em desenvolvimento para gestão eficiente de despesas condominiais, permitindo previsões financeiras e identificação de problemas antes que se tornem críticos.",
+		logoUrl: "/condoguard-icon.svg",
+		repoUrl: "https://github.com/victorradael/condoguard",
+		techStack: [
+			"Java",
+			"Spring Boot",
+			"MongoDB",
+			"Next.js",
+			"React",
+			"Tailwind CSS",
+			"Expo",
+			"React Native",
+			"TypeScript",
+		],
+		theme: {
+			primary: "#3b82f6",
+			secondary: "#64748b",
+			background: "#0f172a",
+		},
+	},
 ];
