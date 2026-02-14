@@ -32,7 +32,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                                 src={project.logoUrl || "/placeholder.svg"}
                                 alt={project.title}
                                 fill
-                                className="object-cover"
+                                className="object-contain p-2"
                             />
                         )}
                     </motion.div>
