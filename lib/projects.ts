@@ -53,6 +53,21 @@ export const projects: Project[] = [
 			primary: "#3b82f6",
 			secondary: "#64748b",
 			background: "#0f172a",
-		},
+		}
+	},
+	{
+		id: "aesiron",
+		title: "Aesiron",
+		shortDescription: "O Ferreiro de Apps Streamlit Standalone",
+		fullDescription:
+			"Ferramenta de CLI para forjar, gerenciar e orquestrar múltiplos aplicativos Streamlit em containers Docker. Permite instanciar novos projetos com infraestrutura plug-and-play e orquestrar a execução de todos os aplicativos em um ecossistema.",
+		logoUrl: "/aesiron-icon.png",
+		repoUrl: "https://github.com/victorradael/aesiron",
+		techStack: ["Python", "Docker", "Streamlit", "CLI"],
+		theme: {
+			primary: "#fb923c",
+			secondary: "#a1a1aa",
+			background: "#18181b",
+		}
 	},
 ];

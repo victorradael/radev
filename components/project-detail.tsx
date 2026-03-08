@@ -37,7 +37,7 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
             <div className="w-full md:w-2/5 relative p-6 md:p-8 flex flex-col items-center justify-center bg-gradient-to-br from-[#0d1117] to-[#161b22] shrink-0">
                 <motion.div
                     layoutId={`image-${project.id}`}
-                    className="relative w-32 h-32 md:w-48 md:h-48 rounded-3xl overflow-hidden shadow-2xl mb-4 md:mb-6 flex items-center justify-center bg-white/5 shrink-0 aspect-square"
+                    className="relative w-40 h-40 md:w-56 md:h-56 rounded-3xl overflow-hidden shadow-2xl mb-4 md:mb-6 flex items-center justify-center bg-transparent shrink-0 aspect-square"
                 >
                     {project.emoji ? (
                         <span className="text-6xl md:text-9xl select-none">{project.emoji}</span>
@@ -46,7 +46,7 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
                             src={project.logoUrl || "/placeholder.svg"}
                             alt={project.title}
                             fill
-                            className="object-contain p-4"
+                            className="object-contain p-2"
                         />
                     )}
                 </motion.div>

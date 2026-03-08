@@ -23,7 +23,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                 <div className="p-6 flex flex-col items-center justify-center space-y-4 h-full">
                     <motion.div
                         layoutId={`image-${project.id}`}
-                        className="relative w-24 h-24 rounded-2xl overflow-hidden flex items-center justify-center bg-white/5"
+                        className="relative w-32 h-32 rounded-2xl overflow-hidden flex items-center justify-center bg-transparent"
                     >
                         {project.emoji ? (
                             <span className="text-6xl select-none">{project.emoji}</span>
@@ -32,7 +32,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                                 src={project.logoUrl || "/placeholder.svg"}
                                 alt={project.title}
                                 fill
-                                className="object-contain p-2"
+                                className="object-contain p-1"
                             />
                         )}
                     </motion.div>
