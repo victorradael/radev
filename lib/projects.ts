@@ -70,4 +70,19 @@ export const projects: Project[] = [
 			background: "#18181b",
 		}
 	},
+	{
+		id: "core-keeper-armory",
+		title: "Core Keeper Armory",
+		shortDescription: "Um companheiro de desktop especializado para progressão de equipamentos e builds.",
+		fullDescription:
+			"Core Keeper Armory é uma aplicação desktop multiplataforma projetada para resolver a complexidade de rastrear conjuntos de equipamentos e builds de personagens no jogo Core Keeper. Ele fornece um painel centralizado para os jogadores gerenciarem múltiplos conjuntos de itens, rastrearem a aquisição de equipamentos e coordenarem a progressão em sessões cooperativas.",
+		logoUrl: "/core-keeper-armory-icon.png",
+		repoUrl: "https://github.com/victorradael/core-keeper-armory",
+		techStack: ["Electron", "React", "TypeScript", "Fastify", "Docker"],
+		theme: {
+			primary: "#eab308",
+			secondary: "#78716c",
+			background: "#0c0a09",
+		},
+	},
 ];
