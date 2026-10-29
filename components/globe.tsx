@@ -88,7 +88,7 @@ export const GlobeContainer = ({
 	className = "",
 }: GlobeContainerProps) => {
 	return (
-		<div className={`relative w-full h-full bg-[#0d1117] ${className}`}>
+		<div className={`relative w-full h-full ${className}`}>
 			<div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0d1117]/80" />
 			<Canvas
 				camera={{

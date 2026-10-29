@@ -16,7 +16,11 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
     return (
         <motion.div
             layoutId={`card-${project.id}`}
-            className="w-full h-full bg-[#161b22] rounded-lg overflow-hidden flex flex-col md:flex-row relative z-50 shadow-2xl"
+            className="w-full h-full bg-[#161b22] rounded-xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row relative z-50 shadow-2xl"
+            style={{ "--accent": project.theme.primary } as React.CSSProperties}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Detalhes de ${project.title}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -27,20 +31,20 @@ export function ProjectDetail({ project, onClose }: ProjectDetailProps) {
                     e.stopPropagation();
                     onClose();
                 }}
-                className="absolute top-4 right-4 z-[60] p-2 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors"
-                aria-label="Close project details"
+                className="absolute top-4 right-4 z-[60] p-2.5 bg-black/50 hover:bg-black/70 rounded-full text-white transition-colors"
+                aria-label="Fechar detalhes do projeto"
             >
                 <X size={24} />
             </button>
 
             {/* Left Side - Visual/Brand */}
-            <div className="w-full md:w-2/5 relative p-6 md:p-8 flex flex-col items-center justify-center bg-gradient-to-br from-[#0d1117] to-[#161b22] shrink-0">
+            <div className="w-full md:w-2/5 relative p-6 md:p-8 flex flex-col items-center justify-center detail-visual shrink-0">
                 <motion.div
                     layoutId={`image-${project.id}`}
                     className="relative w-40 h-40 md:w-56 md:h-56 rounded-3xl overflow-hidden shadow-2xl mb-4 md:mb-6 flex items-center justify-center bg-transparent shrink-0 aspect-square"
                 >
                     {project.emoji ? (
-                        <span className="text-6xl md:text-9xl select-none">{project.emoji}</span>
+                        <span className="text-7xl md:text-9xl select-none">{project.emoji}</span>
                     ) : (
                         <Image
                             src={project.logoUrl || "/placeholder.svg"}
