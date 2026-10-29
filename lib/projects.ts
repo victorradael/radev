@@ -56,18 +56,18 @@ export const projects: Project[] = [
 		}
 	},
 	{
-		id: "aesiron",
-		title: "Aesiron",
-		shortDescription: "O Ferreiro de Apps Streamlit Standalone",
+		id: "spacekid",
+		title: "SpaceKid",
+		shortDescription: "Um spec kit minimalista para desenvolvimento com agentes de IA.",
 		fullDescription:
-			"Ferramenta de CLI para forjar, gerenciar e orquestrar múltiplos aplicativos Streamlit em containers Docker. Permite instanciar novos projetos com infraestrutura plug-and-play e orquestrar a execução de todos os aplicativos em um ecossistema.",
-		logoUrl: "/aesiron-icon.png",
-		repoUrl: "https://github.com/victorradael/aesiron",
-		techStack: ["Python", "Docker", "Streamlit", "CLI"],
+			"SpaceKid cria, com um único comando, um miniverse no seu diretório: um pequeno mundo autocontido com o conhecimento, os arquivos produzidos e o fluxo spec-driven (contexto, spec, plano, implementação e fechamento do ciclo) de que agentes de IA e pessoas precisam para trabalhar bem, em vez de prompts ad-hoc. Funciona com projetos em qualquer linguagem.",
+		logoUrl: "/spacekid-icon.png",
+		repoUrl: "https://github.com/victorradael/spacekid",
+		techStack: ["Python", "CLI", "Spec-Driven Development", "AI Agents"],
 		theme: {
-			primary: "#fb923c",
-			secondary: "#a1a1aa",
-			background: "#18181b",
+			primary: "#d946ef",
+			secondary: "#64748b",
+			background: "#ffffff",
 		}
 	},
 	{
