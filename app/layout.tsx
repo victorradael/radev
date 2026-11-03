@@ -6,6 +6,8 @@ import { siteConfig } from "@/lib/site";
 
 export const viewport: Viewport = {
 	themeColor: "#0d1117",
+	colorScheme: "dark",
+	viewportFit: "cover",
 };
 
 export const metadata: Metadata = {
@@ -21,6 +23,11 @@ export const metadata: Metadata = {
 	creator: siteConfig.name,
 	alternates: { canonical: "/" },
 	manifest: "/site.webmanifest",
+	appleWebApp: {
+		capable: true,
+		statusBarStyle: "black-translucent",
+		title: siteConfig.name,
+	},
 	robots: {
 		index: true,
 		follow: true,
@@ -101,8 +108,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="pt-BR">
-			<body className="min-h-screen flex flex-col">
+		<html lang="pt-BR" className="bg-[#0d1117]">
+			<body className="min-h-screen flex flex-col bg-[#0d1117]">
 				<script
 					type="application/ld+json"
 					// biome-ignore lint/security/noDangerouslySetInnerHtml: static JSON-LD
@@ -110,7 +117,7 @@ export default function RootLayout({
 						__html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
 					}}
 				/>
-				<main className="flex-1 flex flex-col bg-slate w-full">
+				<main className="flex-1 flex flex-col bg-[#0d1117] w-full">
 					{children}
 				</main>
 				<Footer />

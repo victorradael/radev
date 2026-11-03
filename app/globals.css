@@ -24,6 +24,20 @@
   }
 }
 
+/* Fundo na raiz: o Safari iOS pinta overscroll, safe areas e barras com o
+   background de html/body. Sem isso aparecem bordas brancas. */
+html {
+  background-color: #0d1117;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0d1117;
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-text-size-adjust: 100%;
+}
+
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);
