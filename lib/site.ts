@@ -5,7 +5,7 @@ export const siteConfig = {
 	title: "Victor Radael | Engenheiro de Software",
 	description:
 		"Sou Victor Radael, engenheiro de software focado em fundamentos e arquitetura. Aqui estão os projetos que construí, as decisões que tomei e a tecnologia que estudo.",
-	bio: "Curioso por natureza. Já passei por JavaScript, Python, PHP, Go, dados e infraestrutura, e de cada contexto fica o mesmo: os fundamentos. É a base que faz qualquer ferramenta valer, ainda mais com IA.",
+	bio: "Curioso por natureza. Já passei por JavaScript, Python, PHP, Go, dados e infraestrutura, e em cada contexto aprendi o máximo que pude.",
 	headline: "Já trabalhei com muitas stacks. O que carrego de cada uma são os fundamentos.",
 	summary:
 		"Sou engenheiro de software e gosto de entender como as coisas funcionam por baixo. Já trabalhei em contextos e stacks bem diferentes, e o que mais me serviu foram sempre os fundamentos: redes, sistemas operacionais, arquitetura, modelagem. São eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
@@ -28,7 +28,7 @@ export const siteConfig = {
 		},
 		{
 			title: "Fundamentos de engenharia",
-			text: "Redes, sistemas operacionais, modelagem, arquitetura. Aprendi isso cedo e continua sendo o que mais uso, em qualquer stack, velha ou nova.",
+			text: "Redes, sistemas operacionais, como os dados são guardados e trafegam. Aprendi isso cedo e continua sendo o que mais uso, em qualquer stack, velha ou nova.",
 		},
 		{
 			title: "Engenharia com IA",

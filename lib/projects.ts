@@ -20,7 +20,7 @@ export const projects: Project[] = [
 		title: "Phantom",
 		shortDescription: "Um app de desktop minimalista que construí para explorar Electron e fluxos de trabalho mais focados.",
 		fullDescription:
-			"Construí o Phantom para entender como aplicações desktop modernas funcionam com Electron. A proposta era manter a interface mínima e rápida, sem abrir mão das ferramentas essenciais. O principal aprendizado foi navegar o trade-off entre processo main e renderer do Electron — uma decisão de arquitetura que afeta tudo, do desempenho à segurança.",
+			"Construí o Phantom para entender como aplicações desktop modernas funcionam com Electron. A proposta era manter a interface mínima e rápida, sem abrir mão das ferramentas essenciais. O principal desafio foi o trade-off entre processo main e renderer — optei por manter o renderer sem acesso direto ao Node e expor só o necessário via preload. Uma decisão que afeta tudo, do desempenho à segurança.",
 		emoji: "👻",
 		repoUrl: "https://github.com/victorradael/phantom",
 		techStack: ["Electron", "React", "TypeScript", "TailwindCSS"],
@@ -35,13 +35,13 @@ export const projects: Project[] = [
 		title: "CondoGuard",
 		shortDescription: "Uma aplicação que estou construindo para entender melhor como as despesas de um condomínio se comportam ao longo do tempo.",
 		fullDescription:
-			"Comecei o CondoGuard para entender melhor como as despesas de um condomínio se comportam ao longo do tempo e antecipar problemas antes que virem surpresa. A stack combina Java com Spring Boot no backend, MongoDB para o modelo de dados e Next.js com React Native para web e mobile. Ainda está em desenvolvimento.",
+			"Comecei o CondoGuard para entender como as despesas de um condomínio se comportam ao longo do tempo e antecipar problemas antes que virem surpresa. O backend é em Go com PostgreSQL, e a interface em Next.js. Ainda está em desenvolvimento.",
 		logoUrl: "/condoguard-icon.svg",
 		repoUrl: "https://github.com/victorradael/condoguard",
 		techStack: [
-			"Java",
-			"Spring Boot",
-			"MongoDB",
+			"Go",
+			"PostgreSQL",
+			"Redis",
 			"Next.js",
 			"React",
 			"Tailwind CSS",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
 		title: "SpaceKid",
 		shortDescription: "Uma ferramenta que criei para parar de trabalhar com prompts soltos e ter um fluxo spec-driven de verdade com agentes de IA.",
 		fullDescription:
-			"Cansei de prompts soltos com agentes de IA. O SpaceKid cria, com um único comando, um miniverse no seu diretório: conhecimento, arquivos produzidos e um fluxo spec-driven num só lugar. Decidi que o fluxo seria baseado em specs porque é isso que deixa o trabalho do agente — e o meu — previsível. Funciona com projetos em qualquer linguagem.",
+			"Cansei de prompts soltos com agentes de IA. O SpaceKid cria, com um único comando, um miniverse no seu diretório: conhecimento, arquivos produzidos e um fluxo spec-driven num só lugar. Decidi que o fluxo seria baseado em specs porque é isso que deixa o trabalho do agente — e o meu — previsível. Por isso funciona em projetos de qualquer linguagem.",
 		logoUrl: "/spacekid-icon.png",
 		repoUrl: "https://github.com/victorradael/spacekid",
 		techStack: ["Python", "CLI", "Spec-Driven Development", "AI Agents"],
