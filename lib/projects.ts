@@ -18,9 +18,9 @@ export const projects: Project[] = [
 	{
 		id: "phantom",
 		title: "Phantom",
-		shortDescription: "A minimalist desktop application for enhanced productivity.",
+		shortDescription: "Um app de desktop minimalista que construí para explorar Electron e fluxos de trabalho mais focados.",
 		fullDescription:
-			"Phantom is a desktop application designed to streamline your workflow with a focus on minimalism and efficiency. It features a clean interface, fast performance, and essential tools integrated directly into your desktop environment. Built with Electron and modern web technologies.",
+			"Construí o Phantom para entender como aplicações desktop modernas funcionam com Electron. A proposta era manter a interface mínima e rápida, sem abrir mão das ferramentas essenciais. O principal aprendizado foi navegar o trade-off entre processo main e renderer do Electron — uma decisão de arquitetura que afeta tudo, do desempenho à segurança.",
 		emoji: "👻",
 		repoUrl: "https://github.com/victorradael/phantom",
 		techStack: ["Electron", "React", "TypeScript", "TailwindCSS"],
@@ -73,9 +73,9 @@ export const projects: Project[] = [
 	{
 		id: "core-keeper-armory",
 		title: "Core Keeper Armory",
-		shortDescription: "Um companheiro de desktop especializado para progressão de equipamentos e builds.",
+		shortDescription: "Um companheiro de desktop que construí para resolver o caos de rastrear builds e equipamentos no Core Keeper.",
 		fullDescription:
-			"Core Keeper Armory é uma aplicação desktop multiplataforma projetada para resolver a complexidade de rastrear conjuntos de equipamentos e builds de personagens no jogo Core Keeper. Ele fornece um painel centralizado para os jogadores gerenciarem múltiplos conjuntos de itens, rastrearem a aquisição de equipamentos e coordenarem a progressão em sessões cooperativas.",
+			"Joguei Core Keeper com amigos e a gestão de builds virou planilha — funciona, mas não escala. Construí o Armory como um app desktop multiplataforma para centralizar isso: gerenciar múltiplos conjuntos de equipamentos, rastrear aquisições e coordenar progressão em sessões cooperativas. Escolhi Fastify no backend local porque queria experimentar um servidor leve dentro do Electron sem abrir mão de rotas tipadas.",
 		logoUrl: "/core-keeper-armory-icon.png",
 		repoUrl: "https://github.com/victorradael/core-keeper-armory",
 		techStack: ["Electron", "React", "TypeScript", "Fastify", "Docker"],

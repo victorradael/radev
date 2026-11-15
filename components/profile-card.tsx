@@ -88,7 +88,7 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 									</defs>
 									<text className="text-[10px] fill-white font-semibold">
 										<textPath href="#circle" startOffset="0%">
-											MY • LINKEDIN • PROFILE
+											MEU • PERFIL • NO • LINKEDIN •
 										</textPath>
 									</text>
 								</svg>
@@ -148,7 +148,7 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							>
 								<span>
 									<span className="block text-xs uppercase tracking-[0.2em] text-[#58a6ff]">
-										Na prática
+										O que venho construindo
 									</span>
 									<span className="mt-1 block text-base font-semibold">
 										Explorar {projects.length} projetos

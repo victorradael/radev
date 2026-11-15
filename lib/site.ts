@@ -4,10 +4,10 @@ export const siteConfig = {
 	role: "Engenheiro de Software",
 	title: "Victor Radael | Engenheiro de Software",
 	description:
-		"Victor Radael é Engenheiro de Software focado em fundamentos e arquitetura de software na era da IA. Conheça seu portfólio de engenharia de software e seus projetos.",
-	headline: "Na era da IA, quem sabe arquitetar software sai na frente.",
+		"Sou Victor Radael, engenheiro de software focado em fundamentos e arquitetura. Aqui estão os projetos que construí, as decisões que tomei e a tecnologia que estudo.",
+	headline: "Acredito que tecnologia nova só rende de verdade sobre uma base sólida.",
 	summary:
-		"Ferramentas mudam, fundamentos permanecem. Meu trabalho é desenhar software simples, evolutivo e sustentável, com decisões de arquitetura claras e especificações bem pensadas, seja escrevendo o código ou dirigindo agentes de IA.",
+		"Sou engenheiro de software. Estudo e pratico os fundamentos — arquitetura, modelagem, design de sistemas — porque são eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
 	keywords: [
 		"Victor Radael",
 		"victorradael",
@@ -23,15 +23,15 @@ export const siteConfig = {
 	pillars: [
 		{
 			title: "Arquitetura de software",
-			text: "Decisões de design que mantêm sistemas simples, evolutivos e fáceis de manter.",
+			text: "Projeto sistemas para crescer sem virar bagunça. KISS e SOLID não são regras abstratas — são o que separa um sistema fácil de evoluir de um que trava no primeiro requisito novo.",
 		},
 		{
 			title: "Fundamentos de engenharia",
-			text: "Princípios como KISS e SOLID, modelagem e boas práticas que valem em qualquer contexto.",
+			text: "Os princípios que aprendi mais cedo continuam sendo os mais úteis. Modelagem clara e boas práticas de engenharia são o que fazem qualquer stack render, velha ou nova.",
 		},
 		{
 			title: "Engenharia com IA",
-			text: "Specs claras e planos bem pensados para dirigir agentes de IA com qualidade.",
+			text: "Uso IA com specs e planos bem escritos, não prompts ad-hoc. A diferença é a mesma entre code review e code dump: um produz algo sustentável, o outro produz dívida.",
 		},
 	],
 	links: {
