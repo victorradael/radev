@@ -65,6 +65,9 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							<p className="mt-3 text-base md:text-lg font-light text-white/90">
 								{siteConfig.role}
 							</p>
+							<p className="mt-3 text-sm font-light text-white/65 leading-relaxed">
+								{siteConfig.bio}
+							</p>
 						</div>
 					</div>
 

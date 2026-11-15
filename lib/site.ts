@@ -5,6 +5,7 @@ export const siteConfig = {
 	title: "Victor Radael | Engenheiro de Software",
 	description:
 		"Sou Victor Radael, engenheiro de software focado em fundamentos e arquitetura. Aqui estão os projetos que construí, as decisões que tomei e a tecnologia que estudo.",
+	bio: "Passei por JS, Python, Go, dados e infra, sempre de ponta a ponta. O que ficou de cada contexto foram os fundamentos — redes, sistemas, arquitetura — não as ferramentas.",
 	headline: "Acredito que tecnologia nova só rende de verdade sobre uma base sólida.",
 	summary:
 		"Sou engenheiro de software. Estudo e pratico os fundamentos — arquitetura, modelagem, design de sistemas — porque são eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
