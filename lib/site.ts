@@ -5,10 +5,10 @@ export const siteConfig = {
 	title: "Victor Radael | Engenheiro de Software",
 	description:
 		"Sou Victor Radael, engenheiro de software focado em fundamentos e arquitetura. Aqui estão os projetos que construí, as decisões que tomei e a tecnologia que estudo.",
-	bio: "Curioso e sempre de ponta a ponta. O que fica de cada contexto são os fundamentos — a base que faz qualquer ferramenta valer, ainda mais com IA.",
-	headline: "Acredito que tecnologia nova só rende de verdade sobre uma base sólida.",
+	bio: "Curioso por natureza. Já passei por JavaScript, Python, PHP, Go, dados e infraestrutura, e de cada contexto fica o mesmo: os fundamentos. É a base que faz qualquer ferramenta valer, ainda mais com IA.",
+	headline: "Já trabalhei com muitas stacks. O que carrego de cada uma são os fundamentos.",
 	summary:
-		"Sou engenheiro de software. Estudo e pratico os fundamentos — arquitetura, modelagem, design de sistemas — porque são eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
+		"Sou engenheiro de software e gosto de entender como as coisas funcionam por baixo. Já trabalhei em contextos e stacks bem diferentes, e o que mais me serviu foram sempre os fundamentos: redes, sistemas operacionais, arquitetura, modelagem. São eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
 	keywords: [
 		"Victor Radael",
 		"victorradael",
@@ -24,15 +24,15 @@ export const siteConfig = {
 	pillars: [
 		{
 			title: "Arquitetura de software",
-			text: "Projeto sistemas para crescer sem virar bagunça. KISS e SOLID não são regras abstratas — são o que separa um sistema fácil de evoluir de um que trava no primeiro requisito novo.",
+			text: "Projeto sistemas para crescer sem virar bagunça. Para mim, KISS e SOLID valem pelo que evitam: um sistema que trava no primeiro requisito novo.",
 		},
 		{
 			title: "Fundamentos de engenharia",
-			text: "Os princípios que aprendi mais cedo continuam sendo os mais úteis. Modelagem clara e boas práticas de engenharia são o que fazem qualquer stack render, velha ou nova.",
+			text: "Redes, sistemas operacionais, modelagem, arquitetura. Aprendi isso cedo e continua sendo o que mais uso, em qualquer stack, velha ou nova.",
 		},
 		{
 			title: "Engenharia com IA",
-			text: "Uso IA com specs e planos bem escritos, não prompts ad-hoc. A diferença é a mesma entre code review e code dump: um produz algo sustentável, o outro produz dívida.",
+			text: "Uso IA com specs e planos bem escritos, não prompts ad-hoc. A diferença é a mesma entre code review e code dump: um produz algo sustentável, o outro costuma gerar dívida.",
 		},
 	],
 	links: {

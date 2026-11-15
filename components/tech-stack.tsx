@@ -7,12 +7,14 @@ import {
 	SiElectron,
 	SiExpress,
 	SiFastapi,
+	SiGo,
 	SiGooglecloud,
 	SiKubernetes,
 	SiLinux,
 	SiNestjs,
 	SiNextdotjs,
 	SiNodedotjs,
+	SiPython,
 	SiRaspberrypi,
 	SiReact,
 	SiTerraform,
@@ -36,7 +38,9 @@ const TECH: TechItem[] = [
 	{ name: "Node.js", Icon: SiNodedotjs },
 	{ name: "NestJS", Icon: SiNestjs },
 	{ name: "Express", Icon: SiExpress },
+	{ name: "Python", Icon: SiPython },
 	{ name: "FastAPI", Icon: SiFastapi },
+	{ name: "Go", Icon: SiGo },
 	{ name: "Angular", Icon: SiAngular },
 	{ name: "Vue", Icon: SiVuedotjs },
 	{ name: "Docker", Icon: SiDocker },
@@ -55,8 +59,11 @@ export function TechStack() {
 	return (
 		<TooltipProvider delayDuration={300}>
 			<div className="mt-4">
-				<p className="text-xs uppercase tracking-[0.25em] text-[#58a6ff] mb-2">
+				<p className="text-xs uppercase tracking-[0.25em] text-[#58a6ff] mb-1">
 					Tecnologias
+				</p>
+				<p className="text-xs text-white/50 mb-2">
+					Algumas das ferramentas que já usei. A lista muda, os fundamentos não.
 				</p>
 				<div className="flex flex-wrap gap-1.5">
 					{TECH.map(({ name, Icon }) => (

@@ -33,9 +33,9 @@ export const projects: Project[] = [
 	{
 		id: "condoguard",
 		title: "CondoGuard",
-		shortDescription: "Gestão eficiente de despesas condominiais.",
+		shortDescription: "Uma aplicação que estou construindo para entender melhor como as despesas de um condomínio se comportam ao longo do tempo.",
 		fullDescription:
-			"CONDOGUARD é uma aplicação em desenvolvimento para gestão eficiente de despesas condominiais, permitindo previsões financeiras e identificação de problemas antes que se tornem críticos.",
+			"Comecei o CondoGuard para entender melhor como as despesas de um condomínio se comportam ao longo do tempo e antecipar problemas antes que virem surpresa. A stack combina Java com Spring Boot no backend, MongoDB para o modelo de dados e Next.js com React Native para web e mobile. Ainda está em desenvolvimento.",
 		logoUrl: "/condoguard-icon.svg",
 		repoUrl: "https://github.com/victorradael/condoguard",
 		techStack: [
@@ -58,9 +58,9 @@ export const projects: Project[] = [
 	{
 		id: "spacekid",
 		title: "SpaceKid",
-		shortDescription: "Um spec kit minimalista para desenvolvimento com agentes de IA.",
+		shortDescription: "Uma ferramenta que criei para parar de trabalhar com prompts soltos e ter um fluxo spec-driven de verdade com agentes de IA.",
 		fullDescription:
-			"SpaceKid cria, com um único comando, um miniverse no seu diretório: um pequeno mundo autocontido com o conhecimento, os arquivos produzidos e o fluxo spec-driven (contexto, spec, plano, implementação e fechamento do ciclo) de que agentes de IA e pessoas precisam para trabalhar bem, em vez de prompts ad-hoc. Funciona com projetos em qualquer linguagem.",
+			"Cansei de prompts soltos com agentes de IA. O SpaceKid cria, com um único comando, um miniverse no seu diretório: conhecimento, arquivos produzidos e um fluxo spec-driven num só lugar. Decidi que o fluxo seria baseado em specs porque é isso que deixa o trabalho do agente — e o meu — previsível. Funciona com projetos em qualquer linguagem.",
 		logoUrl: "/spacekid-icon.png",
 		repoUrl: "https://github.com/victorradael/spacekid",
 		techStack: ["Python", "CLI", "Spec-Driven Development", "AI Agents"],
@@ -73,7 +73,7 @@ export const projects: Project[] = [
 	{
 		id: "core-keeper-armory",
 		title: "Core Keeper Armory",
-		shortDescription: "Um companheiro de desktop que construí para resolver o caos de rastrear builds e equipamentos no Core Keeper.",
+		shortDescription: "Um companheiro de desktop que construí para acabar com a bagunça de rastrear builds e equipamentos no Core Keeper.",
 		fullDescription:
 			"Joguei Core Keeper com amigos e a gestão de builds virou planilha — funciona, mas não escala. Construí o Armory como um app desktop multiplataforma para centralizar isso: gerenciar múltiplos conjuntos de equipamentos, rastrear aquisições e coordenar progressão em sessões cooperativas. Escolhi Fastify no backend local porque queria experimentar um servidor leve dentro do Electron sem abrir mão de rotas tipadas.",
 		logoUrl: "/core-keeper-armory-icon.png",
