@@ -5,6 +5,7 @@ import { projects } from "@/lib/projects";
 import { GlobeContainer } from "@/components/globe";
 import { siteConfig } from "@/lib/site";
 import { CustomCard } from "./custom-card";
+import { TechStack } from "./tech-stack";
 
 interface Infos {
 	onExploreProjects?: () => void;
@@ -65,6 +66,9 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							<p className="mt-3 text-base md:text-lg font-light text-white/90">
 								{siteConfig.role}
 							</p>
+							<p className="mt-3 text-sm font-light text-white/65 leading-relaxed">
+								{siteConfig.bio}
+							</p>
 						</div>
 					</div>
 
@@ -88,7 +92,7 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 									</defs>
 									<text className="text-[10px] fill-white font-semibold">
 										<textPath href="#circle" startOffset="0%">
-											MY • LINKEDIN • PROFILE
+											MEU • PERFIL • NO • LINKEDIN •
 										</textPath>
 									</text>
 								</svg>
@@ -148,7 +152,7 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							>
 								<span>
 									<span className="block text-xs uppercase tracking-[0.2em] text-[#58a6ff]">
-										Na prática
+										O que venho construindo
 									</span>
 									<span className="mt-1 block text-base font-semibold">
 										Explorar {projects.length} projetos
@@ -188,6 +192,9 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							<div className="text-[10px] sm:text-xs mt-1 text-white/60 uppercase tracking-wide">Seguidores</div>
 						</div>
 					</div>
+
+					{/* Tech Stack */}
+					<TechStack />
 				</div>
 			</div>
 		</CustomCard>

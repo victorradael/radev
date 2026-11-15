@@ -4,10 +4,11 @@ export const siteConfig = {
 	role: "Engenheiro de Software",
 	title: "Victor Radael | Engenheiro de Software",
 	description:
-		"Victor Radael é Engenheiro de Software focado em fundamentos e arquitetura de software na era da IA. Conheça seu portfólio de engenharia de software e seus projetos.",
-	headline: "Na era da IA, quem sabe arquitetar software sai na frente.",
+		"Sou Victor Radael, engenheiro de software focado em fundamentos e arquitetura. Aqui estão os projetos que construí, as decisões que tomei e a tecnologia que estudo.",
+	bio: "Curioso por natureza. Já passei por JavaScript, Python, PHP, Go, dados e infraestrutura, e em cada contexto aprendi o máximo que pude.",
+	headline: "Já trabalhei com muitas stacks. O que carrego de cada uma são os fundamentos.",
 	summary:
-		"Ferramentas mudam, fundamentos permanecem. Meu trabalho é desenhar software simples, evolutivo e sustentável, com decisões de arquitetura claras e especificações bem pensadas, seja escrevendo o código ou dirigindo agentes de IA.",
+		"Sou engenheiro de software e gosto de entender como as coisas funcionam por baixo. Já trabalhei em contextos e stacks bem diferentes, e o que mais me serviu foram sempre os fundamentos: redes, sistemas operacionais, arquitetura, modelagem. São eles que fazem cada nova ferramenta, inclusive IA, ser bem aproveitada em vez de apenas adotada.",
 	keywords: [
 		"Victor Radael",
 		"victorradael",
@@ -23,15 +24,15 @@ export const siteConfig = {
 	pillars: [
 		{
 			title: "Arquitetura de software",
-			text: "Decisões de design que mantêm sistemas simples, evolutivos e fáceis de manter.",
+			text: "Projeto sistemas para crescer sem virar bagunça. Para mim, KISS e SOLID valem pelo que evitam: um sistema que trava no primeiro requisito novo.",
 		},
 		{
 			title: "Fundamentos de engenharia",
-			text: "Princípios como KISS e SOLID, modelagem e boas práticas que valem em qualquer contexto.",
+			text: "Redes, sistemas operacionais, como os dados são guardados e trafegam. Aprendi isso cedo e continua sendo o que mais uso, em qualquer stack, velha ou nova.",
 		},
 		{
 			title: "Engenharia com IA",
-			text: "Specs claras e planos bem pensados para dirigir agentes de IA com qualidade.",
+			text: "Uso IA com specs e planos bem escritos, não prompts ad-hoc. A diferença é a mesma entre code review e code dump: um produz algo sustentável, o outro costuma gerar dívida.",
 		},
 	],
 	links: {
