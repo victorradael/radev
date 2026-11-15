@@ -5,6 +5,7 @@ import { projects } from "@/lib/projects";
 import { GlobeContainer } from "@/components/globe";
 import { siteConfig } from "@/lib/site";
 import { CustomCard } from "./custom-card";
+import { TechStack } from "./tech-stack";
 
 interface Infos {
 	onExploreProjects?: () => void;
@@ -191,6 +192,9 @@ export const ProfileCard: React.FC<Infos> = ({ profile, onExploreProjects }) => 
 							<div className="text-[10px] sm:text-xs mt-1 text-white/60 uppercase tracking-wide">Seguidores</div>
 						</div>
 					</div>
+
+					{/* Tech Stack */}
+					<TechStack />
 				</div>
 			</div>
 		</CustomCard>
